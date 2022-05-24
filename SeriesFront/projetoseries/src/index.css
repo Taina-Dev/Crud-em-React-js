@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#9AB8BA;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.invalid-field{
+  border-color: #dc3545;
+  color: #dc3545;
+  background-color: #fff;
+}
+
+table div.card {
+  background-color: #DDF7F8;
+  align-items: center;
+  border: none;
+  transition: transform 0.2s;
+}
+table div.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #333;
+  z-index: 10;
+}
+
+table div.card:hover button.delete-button {
+  visibility: visible;
+
+}
+
+table div.card-body {
+  text-align: center;
+}
+
+table div.card img {
+  width: 175px;
+  height: 175px;
+  margin: 30px;
+}
+
+table div.card .delete-button {
+  visibility: hidden;
+}
+
+table tr td:not(:nth-child(3)){
+  border-right: 1px solid #00000020;
+  
+}
+
+table tr:not(:last-child) td{
+  border-bottom: 1px solid #00000020;
+}
+
+.jumbotron{
+  background: linear-gradient(-135deg, #0b1516,#045256, #0b1516); 
+  border-radius: 5px;
+  margin-top: 5px;
+  
+}
+.jumbotron h1{
+  color:#D9DBD7
+  
+}
+
+p{
+  color:#0B1516;
+}
+
+footer {
+  width: 100%;
+background-color: transparent;
+padding: 16px 0 16px;
+color: #030e35;
+position: fixed;
+bottom: 0;
+text-align: center;
+font-weight: 400;
+}
+
+footer i {
+	color: aliceblue;
+	font-size: 25px;
+	margin-left: 10px;
+	transition: 0.4s;
+	margin-bottom: 10px;
+}
+
+footer i:hover{
+	transform: translateY(-10px);
+}
